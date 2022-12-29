@@ -1,0 +1,31 @@
+/* Plan style */
+.plan_target {
+  width: 100%;
+  height: 49.375vw;
+  background: url("../img/plan/plan.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.plan_build {
+  position: absolute;
+}
+.plan_build:hover svg {
+  fill: red;
+}
+.plan_build svg {
+  width: 100%;
+  height: 100%;
+}
+.plan_build.area1.build1 {
+  left: 49.375vw;
+  top: 14.7569444444vw;
+  width: 6.4583333333vw;
+  height: 3.9236111111vw;
+}
+.plan_build.area1.build2 {
+  left: 49.6875vw;
+  top: 18.4027777778vw;
+  width: 6.7361111111vw;
+  height: 2.3611111111vw;
+}/*# sourceMappingURL=plan.css.map */

@@ -1,0 +1,35 @@
+/* Plan style */
+@function vw($item) {
+    @return (($item / 1440) * 100vw);
+}
+.plan_target {
+    width: 100%;
+    height: vw(711);
+    background: url('../img/plan/plan.png') no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.plan_build {
+    position: absolute;
+    &:hover svg {
+        fill: red;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+    &.area1 {
+        &.build1 {
+            left: vw(711);
+            top: vw(212.5);
+            width: vw(93);
+            height: vw(56.5);
+        }
+        &.build2 {
+            left: vw(715.5);
+            top: vw(265);
+            width: vw(97);
+            height: vw(34);
+        }
+    }
+}
