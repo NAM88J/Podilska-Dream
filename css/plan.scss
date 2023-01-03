@@ -2,6 +2,22 @@
 @function vw($item) {
     @return (($item / 1440) * 100vw);
 }
+.planheader {
+    margin-top: 60px;
+    padding-bottom: 30px;
+}
+.planheader h1,
+.planheader .title1 {
+    width: 280px;
+}
+.planheader .line_block {
+    width: calc(100% - 290px);
+    margin-top: 13px;
+}
+.planheader .line_block p {
+    font-size: 18px;
+    line-height: 1.5;
+}
 .plan_target {
     width: 100%;
     height: vw(711);
@@ -11,14 +27,77 @@
 }
 .plan_build {
     position: absolute;
-    &:hover svg {
-        fill: red;
-    }
     svg {
         width: 100%;
         height: 100%;
+        fill: #4CBB7B;
+        fill-opacity: 0.27;
+        transition: fill 0.4s;
+    }
+    &.area1,
+    &.area2,
+    &.area3,
+    &.area4,
+    &.area5 {
+        &:hover,
+        &.active {
+            svg {
+                fill: #F2C94C;
+            }
+        }
+    }
+    &.sales svg {
+        fill: #EB5757;
+        cursor: default;
+        &:hover {
+            fill: #EB5757;
+        }
     }
     &.area1 {
+        &.build1 {
+            left: vw(103.5);
+            top: vw(235);
+            width: vw(99);
+            height: vw(82);
+        }
+        &.build2 {
+            left: vw(135);
+            top: vw(240.5);
+            width: vw(104);
+            height: vw(75);
+        }
+        &.build3 {
+            left: vw(177);
+            top: vw(241.5);
+            width: vw(99.5);
+            height: vw(76);
+        }
+        &.build4 {
+            left: vw(221);
+            top: vw(240);
+            width: vw(90.5);
+            height: vw(85);
+        }
+        &.build5 {
+            left: vw(251);
+            top: vw(278.5);
+            width: vw(105);
+            height: vw(45.5);
+        }
+        &.build6 {
+            left: vw(333.5);
+            top: vw(276.5);
+            width: vw(96.5);
+            height: vw(45.5);
+        }
+        &.build7 {
+            left: vw(412);
+            top: vw(274);
+            width: vw(89);
+            height: vw(46);
+        }
+    }
+    &.area2 {
         &.build1 {
             left: vw(711);
             top: vw(212.5);
@@ -30,6 +109,390 @@
             top: vw(265);
             width: vw(97);
             height: vw(34);
+        }
+        &.build3 {
+            left: vw(718);
+            top: vw(294);
+            width: vw(112.5);
+            height: vw(77);
+        }
+        &.build4 {
+            left: vw(148.5);
+            top: vw(340.5);
+            width: vw(129);
+            height: vw(86);
+        }
+        &.build5 {
+            left: vw(228);
+            top: vw(339);
+            width: vw(129);
+            height: vw(86);
+        }
+        &.build6 {
+            left: vw(318);
+            top: vw(335);
+            width: vw(118);
+            height: vw(85.5);
+        }
+        &.build7 {
+            left: vw(400.5);
+            top: vw(334.5);
+            width: vw(111.5);
+            height: vw(82.5);
+        }
+        &.build8 {
+            left: vw(492);
+            top: vw(332.5);
+            width: vw(123);
+            height: vw(80.5);
+        }
+        &.build9 {
+            left: vw(69);
+            top: vw(425);
+            width: vw(139);
+            height: vw(105);
+        }
+        &.build10 {
+            left: vw(135);
+            top: vw(422);
+            width: vw(131);
+            height: vw(108);
+        }
+        &.build11 {
+            left: vw(201);
+            top: vw(419.5);
+            width: vw(122.5);
+            height: vw(111);
+        }
+        &.build12 {
+            left: vw(267.5);
+            top: vw(418);
+            width: vw(113.5);
+            height: vw(113.5);
+        }
+        &.build13 {
+            left: vw(344.5);
+            top: vw(414);
+            width: vw(109);
+            height: vw(100.5);
+        }
+        &.build14 {
+            left: vw(430.5);
+            top: vw(411);
+            width: vw(103);
+            height: vw(81.5);
+        }
+        &.build15 {
+            left: vw(518.5);
+            top: vw(408);
+            width: vw(94.5);
+            height: vw(76.5);
+        }
+        &.build16 {
+            left: vw(608);
+            top: vw(380);
+            width: vw(63.5);
+            height: vw(100.5);
+        }
+        &.build17 {
+            left: vw(671);
+            top: vw(377.5);
+            width: vw(63.5);
+            height: vw(99);
+        }
+        &.build18 {
+            left: vw(724.5);
+            top: vw(367);
+            width: vw(117);
+            height: vw(48);
+        }
+        &.build19 {
+            left: vw(729);
+            top: vw(411);
+            width: vw(128);
+            height: vw(63);
+        }
+    }
+    &.area3 {
+        &.build1 {
+            left: vw(800.5);
+            top: vw(196);
+            width: vw(89);
+            height: vw(28.5);
+        }
+        &.build2 {
+            left: vw(806.5);
+            top: vw(221);
+            width: vw(91.5);
+            height: vw(17.5);
+        }
+        &.build3 {
+            left: vw(813);
+            top: vw(237);
+            width: vw(93.5);
+            height: vw(22.5);
+        }
+        &.build4 {
+            left: vw(816.5);
+            top: vw(254.5);
+            width: vw(99.5);
+            height: vw(23);
+        }
+        &.build5 {
+            left: vw(824);
+            top: vw(273.5);
+            width: vw(101);
+            height: vw(25.5);
+        }
+        &.build6 {
+            left: vw(828.5);
+            top: vw(294.5);
+            width: vw(106.5);
+            height: vw(26.5);
+        }
+        &.build7 {
+            left: vw(837.5);
+            top: vw(316);
+            width: vw(109.5);
+            height: vw(29.5);
+        }
+        &.build8 {
+            left: vw(842.5);
+            top: vw(340.5);
+            width: vw(116.5);
+            height: vw(31);
+        }
+        &.build9 {
+            left: vw(853);
+            top: vw(367);
+            width: vw(115);
+            height: vw(34);
+        }
+        &.build10 {
+            left: vw(859);
+            top: vw(396.5);
+            width: vw(122.5);
+            height: vw(65);
+        }
+        &.build11 {
+            left: vw(880.5);
+            top: vw(198.5);
+            width: vw(88);
+            height: vw(27);
+        }
+        &.build12 {
+            left: vw(890.5);
+            top: vw(220);
+            width: vw(95.5);
+            height: vw(31);
+        }
+        &.build13 {
+            left: vw(903);
+            top: vw(247.5);
+            width: vw(104.5);
+            height: vw(31.5);
+        }
+        &.build14 {
+            left: vw(916.5);
+            top: vw(274.5);
+            width: vw(111.5);
+            height: vw(37);
+        }
+        &.build15 {
+            left: vw(932);
+            top: vw(306.5);
+            width: vw(119);
+            height: vw(40.5);
+        }
+        &.build16 {
+            left: vw(949);
+            top: vw(341.5);
+            width: vw(125.5);
+            height: vw(47);
+        }
+    }
+    &.area4 {
+        &.build1 {
+            left: vw(958.5);
+            top: vw(177.5);
+            width: vw(119);
+            height: vw(29);
+        }
+        &.build2 {
+            left: vw(978.5);
+            top: vw(203.5);
+            width: vw(117);
+            height: vw(24);
+        }
+        &.build3 {
+            left: vw(992.5);
+            top: vw(223.5);
+            width: vw(118.5);
+            height: vw(20.5);
+        }
+        &.build4 {
+            left: vw(1004);
+            top: vw(240.5);
+            width: vw(123);
+            height: vw(21);
+        }
+        &.build5 {
+            left: vw(1013);
+            top: vw(258);
+            width: vw(126);
+            height: vw(22.5);
+        }
+        &.build6 {
+            left: vw(1027.5);
+            top: vw(275);
+            width: vw(134);
+            height: vw(26);
+        }
+        &.build7 {
+            left: vw(1043.5);
+            top: vw(296.5);
+            width: vw(137.5);
+            height: vw(27.5);
+        }
+        &.build8 {
+            left: vw(1057);
+            top: vw(318);
+            width: vw(145.5);
+            height: vw(30);
+        }
+        &.build9 {
+            left: vw(1076);
+            top: vw(341.5);
+            width: vw(150.5);
+            height: vw(32);
+        }
+        &.build10 {
+            left: vw(1093.5);
+            top: vw(369.5);
+            width: vw(157);
+            height: vw(33.5);
+        }
+        &.build11 {
+            left: vw(1112.5);
+            top: vw(396);
+            width: vw(186);
+            height: vw(62);
+        }
+        &.build12 {
+            left: vw(1067);
+            top: vw(178);
+            width: vw(122.5);
+            height: vw(46);
+        }
+        &.build13 {
+            left: vw(1094);
+            top: vw(220);
+            width: vw(116.5);
+            height: vw(25);
+        }
+        &.build14 {
+            left: vw(1113.5);
+            top: vw(237.5);
+            width: vw(126);
+            height: vw(29.5);
+        }
+        &.build15 {
+            left: vw(1133);
+            top: vw(263.5);
+            width: vw(163.5);
+            height: vw(57.5);
+        }
+        &.build16 {
+            left: vw(1182.5);
+            top: vw(314.5);
+            width: vw(150.5);
+            height: vw(37.5);
+        }
+        &.build17 {
+            left: vw(1242.5);
+            top: vw(382.5);
+            width: vw(132.5);
+            height: vw(69);
+        }
+    }
+    &.area5 {
+        &.build1 {
+            left: vw(331);
+            top: vw(514);
+            width: vw(124.5);
+            height: vw(121);
+        }
+        &.build2 {
+            left: vw(428.5);
+            top: vw(509.5);
+            width: vw(100.5);
+            height: vw(126);
+        }
+        &.build3 {
+            left: vw(508);
+            top: vw(506);
+            width: vw(93.5);
+            height: vw(129.5);
+        }
+        &.build4 {
+            left: vw(590.5);
+            top: vw(503);
+            width: vw(81);
+            height: vw(132.5);
+        }
+    }
+    &.area6 {
+        p {
+            background: #0063E0;
+            padding: vw(6) vw(10);
+            font-weight: 500;
+            font-size: vw(18);
+            line-height: 1.2;
+            color: #FFFFFF;
+            display: inline-block;
+            position: absolute;
+        }
+        &.build1 {
+            left: vw(784.5);
+            top: vw(159.5);
+            width: vw(169.5);
+            height: vw(44);
+            p {
+                top: vw(-34);
+                left: vw(-65);
+            }
+        }
+        &.build2 {
+            left: vw(1.5);
+            top: vw(414.5);
+            width: vw(135);
+            height: vw(114.5);
+            p {
+                bottom: vw(-46);
+                left: vw(25);
+            }
+        }
+        &.build3 {
+            left: vw(954.5);
+            top: vw(371.5);
+            width: vw(163.5);
+            height: vw(84.5);
+            p {
+                bottom: vw(-35);
+                left: vw(78);
+                width: max-content;
+            }
+        }
+        &.build4 {
+            left: vw(1298.5);
+            top: vw(294.5);
+            width: vw(90.5);
+            height: vw(46);
+            p {
+                bottom: vw(-27);
+                right: vw(-36);
+                width: max-content;
+            }
         }
     }
 }

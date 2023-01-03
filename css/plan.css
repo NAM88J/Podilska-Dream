@@ -1,4 +1,24 @@
 /* Plan style */
+.planheader {
+  margin-top: 60px;
+  padding-bottom: 30px;
+}
+
+.planheader h1,
+.planheader .title1 {
+  width: 280px;
+}
+
+.planheader .line_block {
+  width: calc(100% - 290px);
+  margin-top: 13px;
+}
+
+.planheader .line_block p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 .plan_target {
   width: 100%;
   height: 49.375vw;
@@ -10,22 +30,454 @@
 .plan_build {
   position: absolute;
 }
-.plan_build:hover svg {
-  fill: red;
-}
 .plan_build svg {
   width: 100%;
   height: 100%;
+  fill: #4CBB7B;
+  fill-opacity: 0.27;
+  transition: fill 0.4s;
+}
+.plan_build.area1:hover svg, .plan_build.area1.active svg, .plan_build.area2:hover svg, .plan_build.area2.active svg, .plan_build.area3:hover svg, .plan_build.area3.active svg, .plan_build.area4:hover svg, .plan_build.area4.active svg, .plan_build.area5:hover svg, .plan_build.area5.active svg {
+  fill: #F2C94C;
+}
+.plan_build.sales svg {
+  fill: #EB5757;
+  cursor: default;
+}
+.plan_build.sales svg:hover {
+  fill: #EB5757;
 }
 .plan_build.area1.build1 {
+  left: 7.1875vw;
+  top: 16.3194444444vw;
+  width: 6.875vw;
+  height: 5.6944444444vw;
+}
+.plan_build.area1.build2 {
+  left: 9.375vw;
+  top: 16.7013888889vw;
+  width: 7.2222222222vw;
+  height: 5.2083333333vw;
+}
+.plan_build.area1.build3 {
+  left: 12.2916666667vw;
+  top: 16.7708333333vw;
+  width: 6.9097222222vw;
+  height: 5.2777777778vw;
+}
+.plan_build.area1.build4 {
+  left: 15.3472222222vw;
+  top: 16.6666666667vw;
+  width: 6.2847222222vw;
+  height: 5.9027777778vw;
+}
+.plan_build.area1.build5 {
+  left: 17.4305555556vw;
+  top: 19.3402777778vw;
+  width: 7.2916666667vw;
+  height: 3.1597222222vw;
+}
+.plan_build.area1.build6 {
+  left: 23.1597222222vw;
+  top: 19.2013888889vw;
+  width: 6.7013888889vw;
+  height: 3.1597222222vw;
+}
+.plan_build.area1.build7 {
+  left: 28.6111111111vw;
+  top: 19.0277777778vw;
+  width: 6.1805555556vw;
+  height: 3.1944444444vw;
+}
+.plan_build.area2.build1 {
   left: 49.375vw;
   top: 14.7569444444vw;
   width: 6.4583333333vw;
   height: 3.9236111111vw;
 }
-.plan_build.area1.build2 {
+.plan_build.area2.build2 {
   left: 49.6875vw;
   top: 18.4027777778vw;
   width: 6.7361111111vw;
   height: 2.3611111111vw;
+}
+.plan_build.area2.build3 {
+  left: 49.8611111111vw;
+  top: 20.4166666667vw;
+  width: 7.8125vw;
+  height: 5.3472222222vw;
+}
+.plan_build.area2.build4 {
+  left: 10.3125vw;
+  top: 23.6458333333vw;
+  width: 8.9583333333vw;
+  height: 5.9722222222vw;
+}
+.plan_build.area2.build5 {
+  left: 15.8333333333vw;
+  top: 23.5416666667vw;
+  width: 8.9583333333vw;
+  height: 5.9722222222vw;
+}
+.plan_build.area2.build6 {
+  left: 22.0833333333vw;
+  top: 23.2638888889vw;
+  width: 8.1944444444vw;
+  height: 5.9375vw;
+}
+.plan_build.area2.build7 {
+  left: 27.8125vw;
+  top: 23.2291666667vw;
+  width: 7.7430555556vw;
+  height: 5.7291666667vw;
+}
+.plan_build.area2.build8 {
+  left: 34.1666666667vw;
+  top: 23.0902777778vw;
+  width: 8.5416666667vw;
+  height: 5.5902777778vw;
+}
+.plan_build.area2.build9 {
+  left: 4.7916666667vw;
+  top: 29.5138888889vw;
+  width: 9.6527777778vw;
+  height: 7.2916666667vw;
+}
+.plan_build.area2.build10 {
+  left: 9.375vw;
+  top: 29.3055555556vw;
+  width: 9.0972222222vw;
+  height: 7.5vw;
+}
+.plan_build.area2.build11 {
+  left: 13.9583333333vw;
+  top: 29.1319444444vw;
+  width: 8.5069444444vw;
+  height: 7.7083333333vw;
+}
+.plan_build.area2.build12 {
+  left: 18.5763888889vw;
+  top: 29.0277777778vw;
+  width: 7.8819444444vw;
+  height: 7.8819444444vw;
+}
+.plan_build.area2.build13 {
+  left: 23.9236111111vw;
+  top: 28.75vw;
+  width: 7.5694444444vw;
+  height: 6.9791666667vw;
+}
+.plan_build.area2.build14 {
+  left: 29.8958333333vw;
+  top: 28.5416666667vw;
+  width: 7.1527777778vw;
+  height: 5.6597222222vw;
+}
+.plan_build.area2.build15 {
+  left: 36.0069444444vw;
+  top: 28.3333333333vw;
+  width: 6.5625vw;
+  height: 5.3125vw;
+}
+.plan_build.area2.build16 {
+  left: 42.2222222222vw;
+  top: 26.3888888889vw;
+  width: 4.4097222222vw;
+  height: 6.9791666667vw;
+}
+.plan_build.area2.build17 {
+  left: 46.5972222222vw;
+  top: 26.2152777778vw;
+  width: 4.4097222222vw;
+  height: 6.875vw;
+}
+.plan_build.area2.build18 {
+  left: 50.3125vw;
+  top: 25.4861111111vw;
+  width: 8.125vw;
+  height: 3.3333333333vw;
+}
+.plan_build.area2.build19 {
+  left: 50.625vw;
+  top: 28.5416666667vw;
+  width: 8.8888888889vw;
+  height: 4.375vw;
+}
+.plan_build.area3.build1 {
+  left: 55.5902777778vw;
+  top: 13.6111111111vw;
+  width: 6.1805555556vw;
+  height: 1.9791666667vw;
+}
+.plan_build.area3.build2 {
+  left: 56.0069444444vw;
+  top: 15.3472222222vw;
+  width: 6.3541666667vw;
+  height: 1.2152777778vw;
+}
+.plan_build.area3.build3 {
+  left: 56.4583333333vw;
+  top: 16.4583333333vw;
+  width: 6.4930555556vw;
+  height: 1.5625vw;
+}
+.plan_build.area3.build4 {
+  left: 56.7013888889vw;
+  top: 17.6736111111vw;
+  width: 6.9097222222vw;
+  height: 1.5972222222vw;
+}
+.plan_build.area3.build5 {
+  left: 57.2222222222vw;
+  top: 18.9930555556vw;
+  width: 7.0138888889vw;
+  height: 1.7708333333vw;
+}
+.plan_build.area3.build6 {
+  left: 57.5347222222vw;
+  top: 20.4513888889vw;
+  width: 7.3958333333vw;
+  height: 1.8402777778vw;
+}
+.plan_build.area3.build7 {
+  left: 58.1597222222vw;
+  top: 21.9444444444vw;
+  width: 7.6041666667vw;
+  height: 2.0486111111vw;
+}
+.plan_build.area3.build8 {
+  left: 58.5069444444vw;
+  top: 23.6458333333vw;
+  width: 8.0902777778vw;
+  height: 2.1527777778vw;
+}
+.plan_build.area3.build9 {
+  left: 59.2361111111vw;
+  top: 25.4861111111vw;
+  width: 7.9861111111vw;
+  height: 2.3611111111vw;
+}
+.plan_build.area3.build10 {
+  left: 59.6527777778vw;
+  top: 27.5347222222vw;
+  width: 8.5069444444vw;
+  height: 4.5138888889vw;
+}
+.plan_build.area3.build11 {
+  left: 61.1458333333vw;
+  top: 13.7847222222vw;
+  width: 6.1111111111vw;
+  height: 1.875vw;
+}
+.plan_build.area3.build12 {
+  left: 61.8402777778vw;
+  top: 15.2777777778vw;
+  width: 6.6319444444vw;
+  height: 2.1527777778vw;
+}
+.plan_build.area3.build13 {
+  left: 62.7083333333vw;
+  top: 17.1875vw;
+  width: 7.2569444444vw;
+  height: 2.1875vw;
+}
+.plan_build.area3.build14 {
+  left: 63.6458333333vw;
+  top: 19.0625vw;
+  width: 7.7430555556vw;
+  height: 2.5694444444vw;
+}
+.plan_build.area3.build15 {
+  left: 64.7222222222vw;
+  top: 21.2847222222vw;
+  width: 8.2638888889vw;
+  height: 2.8125vw;
+}
+.plan_build.area3.build16 {
+  left: 65.9027777778vw;
+  top: 23.7152777778vw;
+  width: 8.7152777778vw;
+  height: 3.2638888889vw;
+}
+.plan_build.area4.build1 {
+  left: 66.5625vw;
+  top: 12.3263888889vw;
+  width: 8.2638888889vw;
+  height: 2.0138888889vw;
+}
+.plan_build.area4.build2 {
+  left: 67.9513888889vw;
+  top: 14.1319444444vw;
+  width: 8.125vw;
+  height: 1.6666666667vw;
+}
+.plan_build.area4.build3 {
+  left: 68.9236111111vw;
+  top: 15.5208333333vw;
+  width: 8.2291666667vw;
+  height: 1.4236111111vw;
+}
+.plan_build.area4.build4 {
+  left: 69.7222222222vw;
+  top: 16.7013888889vw;
+  width: 8.5416666667vw;
+  height: 1.4583333333vw;
+}
+.plan_build.area4.build5 {
+  left: 70.3472222222vw;
+  top: 17.9166666667vw;
+  width: 8.75vw;
+  height: 1.5625vw;
+}
+.plan_build.area4.build6 {
+  left: 71.3541666667vw;
+  top: 19.0972222222vw;
+  width: 9.3055555556vw;
+  height: 1.8055555556vw;
+}
+.plan_build.area4.build7 {
+  left: 72.4652777778vw;
+  top: 20.5902777778vw;
+  width: 9.5486111111vw;
+  height: 1.9097222222vw;
+}
+.plan_build.area4.build8 {
+  left: 73.4027777778vw;
+  top: 22.0833333333vw;
+  width: 10.1041666667vw;
+  height: 2.0833333333vw;
+}
+.plan_build.area4.build9 {
+  left: 74.7222222222vw;
+  top: 23.7152777778vw;
+  width: 10.4513888889vw;
+  height: 2.2222222222vw;
+}
+.plan_build.area4.build10 {
+  left: 75.9375vw;
+  top: 25.6597222222vw;
+  width: 10.9027777778vw;
+  height: 2.3263888889vw;
+}
+.plan_build.area4.build11 {
+  left: 77.2569444444vw;
+  top: 27.5vw;
+  width: 12.9166666667vw;
+  height: 4.3055555556vw;
+}
+.plan_build.area4.build12 {
+  left: 74.0972222222vw;
+  top: 12.3611111111vw;
+  width: 8.5069444444vw;
+  height: 3.1944444444vw;
+}
+.plan_build.area4.build13 {
+  left: 75.9722222222vw;
+  top: 15.2777777778vw;
+  width: 8.0902777778vw;
+  height: 1.7361111111vw;
+}
+.plan_build.area4.build14 {
+  left: 77.3263888889vw;
+  top: 16.4930555556vw;
+  width: 8.75vw;
+  height: 2.0486111111vw;
+}
+.plan_build.area4.build15 {
+  left: 78.6805555556vw;
+  top: 18.2986111111vw;
+  width: 11.3541666667vw;
+  height: 3.9930555556vw;
+}
+.plan_build.area4.build16 {
+  left: 82.1180555556vw;
+  top: 21.8402777778vw;
+  width: 10.4513888889vw;
+  height: 2.6041666667vw;
+}
+.plan_build.area4.build17 {
+  left: 86.2847222222vw;
+  top: 26.5625vw;
+  width: 9.2013888889vw;
+  height: 4.7916666667vw;
+}
+.plan_build.area5.build1 {
+  left: 22.9861111111vw;
+  top: 35.6944444444vw;
+  width: 8.6458333333vw;
+  height: 8.4027777778vw;
+}
+.plan_build.area5.build2 {
+  left: 29.7569444444vw;
+  top: 35.3819444444vw;
+  width: 6.9791666667vw;
+  height: 8.75vw;
+}
+.plan_build.area5.build3 {
+  left: 35.2777777778vw;
+  top: 35.1388888889vw;
+  width: 6.4930555556vw;
+  height: 8.9930555556vw;
+}
+.plan_build.area5.build4 {
+  left: 41.0069444444vw;
+  top: 34.9305555556vw;
+  width: 5.625vw;
+  height: 9.2013888889vw;
+}
+.plan_build.area6 p {
+  background: #0063E0;
+  padding: 0.4166666667vw 0.6944444444vw;
+  font-weight: 500;
+  font-size: 1.25vw;
+  line-height: 1.2;
+  color: #FFFFFF;
+  display: inline-block;
+  position: absolute;
+}
+.plan_build.area6.build1 {
+  left: 54.4791666667vw;
+  top: 11.0763888889vw;
+  width: 11.7708333333vw;
+  height: 3.0555555556vw;
+}
+.plan_build.area6.build1 p {
+  top: -2.3611111111vw;
+  left: -4.5138888889vw;
+}
+.plan_build.area6.build2 {
+  left: 0.1041666667vw;
+  top: 28.7847222222vw;
+  width: 9.375vw;
+  height: 7.9513888889vw;
+}
+.plan_build.area6.build2 p {
+  bottom: -3.1944444444vw;
+  left: 1.7361111111vw;
+}
+.plan_build.area6.build3 {
+  left: 66.2847222222vw;
+  top: 25.7986111111vw;
+  width: 11.3541666667vw;
+  height: 5.8680555556vw;
+}
+.plan_build.area6.build3 p {
+  bottom: -2.4305555556vw;
+  left: 5.4166666667vw;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.plan_build.area6.build4 {
+  left: 90.1736111111vw;
+  top: 20.4513888889vw;
+  width: 6.2847222222vw;
+  height: 3.1944444444vw;
+}
+.plan_build.area6.build4 p {
+  bottom: -1.875vw;
+  right: -2.5vw;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }/*# sourceMappingURL=plan.css.map */

@@ -33,7 +33,7 @@
                 </ul>
             </div>
             <div class="flex">
-                <a href="#" class="icofont header_application">Залишити заявку</a>
+                <a href="#" data-id="1" class="icofont header_application modal_link">Залишити заявку</a>
                 <a href="#" class="header_partner">
                     <img src="./img/logo_partner.svg" alt="logo partner">
                 </a>
@@ -52,7 +52,7 @@
                     <p>Сучасне котеджне містечко на Поділлі. 
                     Ціна квадратного метра будинку Вашої Мрії
                     за вартістю квадратного метра квартири.</p>
-                    <a class="button" href="#">Записатись на перегляд</a>
+                    <a class="button modal_link" data-id="1" href="#">Записатись на перегляд</a>
                 </div>
             </div>
             <div class="homeabout_right">
@@ -64,8 +64,8 @@
 
     <section class="homevideo pb">
         <div class="container flex">
-            <div class="homevideo_left">
-                <video class="target_video" controls src="./video/video.mp4"></video>
+            <div class="homevideo_left" style="background-image: url('./img/video_img.png');">
+                <a href="#" class="video_link modal_link icofont" data-id="2"></a>    
             </div>
             <div class="homevideo_right">
                 <h2>Подільська Мрія</h2>
@@ -379,6 +379,34 @@
             </a>
         </div>
     </footer>
+
+    <div class="modal_fon"></div>
+    <div class="modal_windows modal_windows-contactus" data-id="1">
+        <p class="modal_title">Зв’яжіться з нами</p>
+        <span class="modal_close icofont"></span>
+        <div class="modal_content">
+            <form action="#" class="wpcf7">
+                <div class="wpcf7-form-control-wrap">
+                    <input class="wpcf7-text" type="email" placeholder="Електронна пошта">
+                </div>
+                <div class="wpcf7-form-control-wrap">
+                    <input class="wpcf7-text" type="phone" placeholder="Введіть коментар">
+                </div>
+                <div class="wpcf7-form-control-wrap">
+                    <input class="wpcf7-submit" type="submit" value="Підтвердити">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal_windows modal_windows-video" data-id="2">
+        <p class="modal_title">Подільська Мрія</p>
+        <span class="modal_close icofont"></span>
+        <div class="modal_content">
+            <video controls autoplay>
+                <source src="./video/intro.MP4" type="video/mp4">
+            </video>
+        </div>
+    </div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
